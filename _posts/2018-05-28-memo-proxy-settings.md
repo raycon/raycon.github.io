@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-05-15 15:41:46 +0900
+date: 2018-05-28 15:21:27 +0900
 categories: til
 tags: ["memo"]
 ---

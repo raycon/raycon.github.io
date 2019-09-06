@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-02-18 20:51:30 +0900
+date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["editor"]
 ---

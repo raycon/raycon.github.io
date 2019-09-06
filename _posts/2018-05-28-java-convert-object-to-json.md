@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-08-10 19:18:51 +0900
+date: 2018-05-28 15:21:27 +0900
 categories: til
 tags: ["language"]
 ---
