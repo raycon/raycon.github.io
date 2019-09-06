@@ -49,3 +49,19 @@ permalink: /:year/:month/:day/:title
 
 # Analytics
 google_analytics: UA-147218133-1
+
+# Collections
+collections:
+  til:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: til
+    values:
+      layout: page
+
+feed:
+  collections:
+    - til
