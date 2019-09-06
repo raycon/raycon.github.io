@@ -43,9 +43,14 @@ minima:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-paginate
 
 # Link
 permalink: /:year/:month/:day/:title
 
 # Analytics
 google_analytics: UA-147218133-1
+
+# Pagination
+paginate_path: "/page/:num/"
+paginate: 10
