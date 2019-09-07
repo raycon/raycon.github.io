@@ -149,8 +149,6 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  // border: 1px solid $grey-color-light;
-  border-radius: 3px;
 }
 
 code {
@@ -171,12 +169,6 @@ pre {
 code, kbd, pre, samp {
   font-family: Menlo,Consolas,"Courier New",Courier,"Liberation Mono",monospace;
 }
-
-.highlight {
-  border-radius:3px;
-}
-
-
 
 /**
  * Wrapper
