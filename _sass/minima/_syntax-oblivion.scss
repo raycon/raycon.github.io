@@ -48,8 +48,8 @@ $selection-background: #000000;
 $selection-foreground: #D0D0D0;
 
 code.highlighter-rouge {
-  color: $class;
-  background: #F0F0F0;
+  background: rgba(27,31,35,.05);
+  border-radius: 3px;
 }
 
 .highlight {
