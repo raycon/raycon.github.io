@@ -180,9 +180,9 @@
 }
 
 /**
- * Posts
+ * Hero
  */
-.post-header {
+.post-hero {
   position: relative;
   color: #F5F5F5;
   background-color: #444;
@@ -203,7 +203,7 @@
 
 }
 
-.post-image {
+.post-hero-image {
   position: absolute;
   z-index: -999998;
   top: 0;
@@ -219,7 +219,7 @@
   background-repeat: no-repeat;
 }
 
-.post-image-gradient {
+.post-hero-gradient {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
   position: absolute;
   top: 0;
@@ -230,6 +230,9 @@
   pointer-events: none;
 }
 
+/**
+ * Posts
+ */
 .post-meta {
   font-weight: 400;
   font-size: 12px;

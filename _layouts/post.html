@@ -3,10 +3,10 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="post-hero">
     <!-- image -->
-    <div class="post-image-gradient"></div>
-    <div class="post-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
+    <div class="post-hero-gradient"></div>
+    <div class="post-hero-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
     <!-- meta -->
     <div class="wrapper">
       <div class="post-meta">
@@ -23,15 +23,9 @@ layout: default
       </div>
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: '%B %d, %Y' }}
+        {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
+        {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-        •
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-        </span>
-      {%- endif -%}
     </div>
   </header>
 
