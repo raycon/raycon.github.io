@@ -2,7 +2,8 @@
 layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
-tags: ["framework"]
+tags: ["framework", "spring", "MySQL"]
+image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ---
 
 # Spring Boot and MySQL Load Data

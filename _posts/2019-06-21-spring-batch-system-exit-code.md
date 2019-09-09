@@ -3,6 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["framework"]
+image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
 ---
 
 # Spring Batch System Exit Code

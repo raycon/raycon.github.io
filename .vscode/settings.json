@@ -2,5 +2,7 @@
     "pasteImage.defaultName": "YMMDD_HHmmss",
     "pasteImage.path": "${projectRoot}/images",
     "pasteImage.basePath": "${projectRoot}",
-    "pasteImage.prefix": "/"
+    "pasteImage.prefix": "/",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
 }
