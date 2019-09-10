@@ -5,23 +5,25 @@ layout: default
 
   <header class="post-hero">
     <!-- image -->
-    <div class="post-hero-gradient"></div>
-    <div class="post-hero-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
-    <!-- meta -->
+    <div class="hero-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
+    <div class="hero-gradient"></div>
     <div class="wrapper">
+      <!-- meta -->
       <div class="post-meta">
-        <div class="post-categories">
+        <!-- category -->
+        <ul class="post-cats">
           {%- for cat in page.categories -%}
-            <span class="post-category">{{cat}}</span>
+            <li class="post-cat">{{cat}}</li>
           {%- endfor -%}
-        </div>
-        <div class="post-tags">
+        </ul>
+        <!-- tag -->
+        <ul class="post-tags">
           {%- for tag in page.tags -%}
-            <span class="post-tag">{{tag}}</span>
+            <li class="post-tag">{{tag}}</li>
           {%- endfor -%}
-        </div>
+        </ul>
       </div>
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -29,7 +31,7 @@ layout: default
     </div>
   </header>
 
-  <div class="post-content wrapper markdown-body" itemprop="articleBody">
+  <div class="wrapper post-content markdown-body" itemprop="articleBody">
     {{ content }}
   </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
