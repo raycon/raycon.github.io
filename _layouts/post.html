@@ -29,13 +29,13 @@ layout: default
     </div>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <div class="wrapper">
+  <div class="wrapper">
+    <div class="post-content e-content  markdown-body" itemprop="articleBody">
       {{ content }}
     </div>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
   </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
 <script async crossorigin="anonymous" issue-term="pathname" repo="raycon/blog-comments" src="https://utteranc.es/client.js" theme="github-light"></script>
