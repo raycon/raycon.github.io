@@ -2,8 +2,12 @@
  * Site header
  */
 .site-header {
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
   line-height: 2rem;
+
+  @include media-query($on-palm) {
+    padding: 1.5rem 0;
+  }
 }
 
 .site-title {
