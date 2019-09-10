@@ -353,33 +353,36 @@
 }
 
 /*
- * Paginate
+ * Pagination
  */
 .pagination {
-  text-align: center;
   margin: $spacing-unit 0;
-  text-transform: uppercase;
-  font-size: 14px;
   font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 
-  a,
   a:visited {
-    padding: 5px 12px;
     color: $text-color;
-    background: #F1F1F1;
-    text-decoration: none;
   }
 
   a:hover {
-    color: #FFF;
+    text-decoration: none;
+    color: #EEE;
     background: $text-color;
   }
-
-  em {
-    padding: 5px 12px;
-    color: #FFF;
-    background: $text-color;
-    font-style: normal;
-  }
-
 }
+
+.page-btn {
+  @include transition;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  color: $text-color;
+  background: #F1F1F1;
+}
+
+.page-current {
+  color: #EEE;
+  background: $text-color;
+  font-style: normal;
+}
+

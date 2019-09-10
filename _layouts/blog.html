@@ -3,47 +3,49 @@ layout: default
 ---
 
 <div class="wrapper">
-    {%- if paginator.posts.size > 0 -%}
-        <ul class="post-list">
-          {%- assign posts = paginator.posts | reverse -%}
-            {%- for post in posts -%}
-                <li class="post-list-item">
-                    <a class="image-link" href="{{ post.url | relative_url }}">
-                      <div class="image" style="background-image: url('{{post.image | relative_url}}')"></div>
-                    </a>
-                    <div class="text">
-                      <h3 class="title">
-                          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                      </h3>
-                      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                      <span class="date">{{ post.date | date: date_format }}</span>
-                    </div>
-                </li>
-            {%- endfor -%}
-        </ul>
+  {%- if paginator.posts.size > 0 -%}
+    <!-- Posts -->
+    <ul class="post-list">
+      {%- assign posts = paginator.posts | reverse -%}
+      {%- for post in posts -%}
+        <li class="post-list-item">
+          <a class="image-link" href="{{ post.url | relative_url }}">
+            <div class="image" style="background-image: url('{{post.image | relative_url}}')"></div>
+          </a>
+          <div class="text">
+            <h3 class="title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="date">{{ post.date | date: date_format }}</span>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
 
-        {% if paginator.total_pages > 1 %}
-            <div class="pagination">
-                {% if paginator.previous_page %}
-                    <a class="cusInnerPage" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-                {% endif %}
-
-                {% for page in (1..paginator.total_pages) %}
-                    {% if page == paginator.page %}
-                        <em class="cusInnerPage">{{ page }}</em>
-                    {% elsif page == 1 %}
-                        <a class="cusInnerPage" href="/">{{ page }}</a>
-                    {% else %}
-                        <a class="cusInnerPage" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-                    {% endif %}
-                {% endfor %}
-
-                {% if paginator.next_page %}
-                    <a class="cusInnerPage" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-                {% endif %}
-            </div>
+    <!-- Page -->
+    {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a class="page-btn page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
         {% endif %}
 
-    {%- endif -%}
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <em class="page-btn page-current">{{ page }}</em>
+          {% elsif page == 1 %}
+            <a class="page-btn" href="/">{{ page }}</a>
+          {% else %}
+            <a class="page-btn" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a class="page-btn page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  {%- endif -%}
 
 </div>
