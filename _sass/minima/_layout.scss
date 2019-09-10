@@ -232,10 +232,9 @@
 
     .text {
       position: absolute;
-      z-index: -1;
       top: 50%;
       transform: translateY(-50%);
-      padding: 0 0 0 115px;
+      margin: 0 0 0 115px;
     }
 
   }
