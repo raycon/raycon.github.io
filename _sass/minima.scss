@@ -49,6 +49,11 @@ $on-laptop:        800px !default;
   transition: all 0.3s ease-in-out;
 }
 
+@mixin sans($weight:400) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $weight;
+}
+
 // Import partials.
 @import
   "minima/base",
