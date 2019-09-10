@@ -398,3 +398,37 @@
 .utterances {
   max-width: 100%;
 }
+
+/*
+ * Paginate
+ */
+.pagination {
+  text-align : center;
+  margin: $spacing-unit 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+
+  a,
+  a:visited {
+    padding: 5px 12px;
+    color: $text-color;
+    background: #F1F1F1;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #FFF;
+    background: $text-color;
+  }
+
+  em {
+    padding: 5px 12px;
+    color: #FFF;
+    background: $text-color;
+    font-style: normal;
+  }
+
+}
+
+
