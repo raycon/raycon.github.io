@@ -234,54 +234,56 @@
 /**
  * Posts
  */
-.post-meta {
-  font-weight: 400;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  @extend %clearfix;
-}
-
-.post-categories {
-  float:left;
-
-  .post-category {
-    display: inline-block;
-    background-color: #222;
-    padding: 5px 10px;
-    margin-right:1px;
+.post-hero {
+  .post-meta {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    @extend %clearfix;
   }
-}
 
-.post-tags {
-  float: left;
-  padding: 5px 10px;
+  .post-categories {
+    float:left;
 
-  .post-tag {
-    margin-right: 10px;
-
-    &:before {
-      content: "#";
-      color: #AAA;
+    .post-category {
+      display: inline-block;
+      background-color: #222;
+      padding: 5px 10px;
+      margin-right:1px;
     }
   }
-}
 
-.post-title {
-  font-size: 2em;
-  letter-spacing: -1px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 15px 0 20px 0;
+  .post-tags {
+    float: left;
+    padding: 5px 10px;
 
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    .post-tag {
+      margin-right: 10px;
+
+      &:before {
+        content: "#";
+        color: #AAA;
+      }
+    }
   }
-}
 
-.post-date {
-  display: block;
-  font-size: 12px;
+  .post-title {
+    font-size: 2em;
+    letter-spacing: -1px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0 20px 0;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.25);
+    }
+  }
+
+  .post-date {
+    display: block;
+    font-size: 12px;
+  }
 }
 
 .post-content {
