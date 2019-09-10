@@ -159,7 +159,6 @@
 
 .post-list-item {
   float: left;
-  margin-bottom: 15px;
   width: 32%;
   margin-right: 2%;
 
@@ -194,12 +193,12 @@
   }
 
   .text {
-    padding-top: 10px;
+    margin: 0.8em 0;
   }
 
   .title {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     margin: 0;
 
@@ -210,7 +209,7 @@
   }
 
   .date {
-    font-size: 12px;
+    font-size: 0.75rem;
     opacity: 0.5;
   }
 
@@ -226,16 +225,16 @@
     position: relative;
 
     .image-link {
-      width: 120px;
-      padding-top: 80px;
+      width: 100px;
+      padding-top: 70px;
     }
 
     .text {
       position: absolute;
-      // min-width: 600 - 135px;
+      z-index: -1;
       top: 50%;
       transform: translateY(-50%);
-      padding: 0 0 0 135px;
+      padding: 0 0 0 120px;
     }
 
   }
