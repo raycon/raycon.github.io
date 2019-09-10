@@ -3,6 +3,7 @@ layout: post
 date: 2019-05-27 16:13:45 +0900
 categories: til
 tags: ["database"]
+image: https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80
 ---
 
 # Batch Write with Behavior

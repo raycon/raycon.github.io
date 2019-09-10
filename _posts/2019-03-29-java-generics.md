@@ -3,6 +3,7 @@ layout: post
 date: 2019-03-29 15:54:21 +0900
 categories: til
 tags: ["language"]
+image: https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1361&q=80
 ---
 
 # Generics
