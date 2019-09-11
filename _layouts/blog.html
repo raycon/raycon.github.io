@@ -6,7 +6,7 @@ layout: default
   {%- if paginator.posts.size > 0 -%}
     <!-- Posts -->
     <ul class="post-list">
-      {%- assign posts = paginator.posts | reverse -%}
+      {%- assign posts = paginator.posts -%}
       {%- for post in posts -%}
         <li class="post-list-item">
           <a class="image-link" href="{{ post.url | relative_url }}">
