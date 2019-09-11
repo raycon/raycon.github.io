@@ -44,6 +44,7 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-paginate
+ - jekyll-sitemap
 
 # Link
 permalink: /:year/:month/:day/:title
@@ -54,3 +55,6 @@ google_analytics: UA-147218133-1
 # Pagination
 paginate_path: "/blog/page/:num/"
 paginate: 9
+
+# Sitemap
+url: "https://raegon.com"
