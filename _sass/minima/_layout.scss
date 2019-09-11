@@ -1,8 +1,9 @@
+
 /**
  * Site header
  */
 .site-header {
-  padding: 2.5rem 0;
+  padding: $spacing-unit 0;
   line-height: 2rem;
 
   @include media-query($on-palm) {
@@ -72,13 +73,19 @@
 /**
  * Site footer
  */
+ body {
+  display: flex;
+  flex-direction:column;
+}
+
 .site-footer {
+  margin-top: auto;
   font-size: 0.875rem;
-  padding: 2em 0;
-  background-color: #F6F8FA;
-  color: #8898aa;
+  padding: $spacing-unit 0;
+  background-color: $gray-background-color;
+  color: $gray-foreground-color;
   overflow: auto;
-  border-top: 1px solid #E1E4E8;
+  border-top: 1px solid $gray-line-color;
 }
 
 .accounts {
@@ -96,7 +103,7 @@
 .accounts svg {
   width: 16px;
   height: 16px;
-  fill: #8898aa;
+  fill: $gray-foreground-color;
 }
 
 .copyright {
@@ -110,7 +117,6 @@
  */
 .page-content {
   padding: 0;
-  flex: 1;
 }
 
 .page-heading {
@@ -118,15 +124,16 @@
 }
 
 .post-list {
-  list-style: none;
   @extend %clearfix;
+  list-style: none;
+  margin: 0;
 }
 
 .post-list-item {
   float: left;
-  margin-bottom: 2em;
   width: 32%;
   margin-right: 2%;
+  margin-bottom: 2%;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -138,8 +145,8 @@
 
   .image-link {
     display: block;
-    padding-top: 65%;
-    background-color: #f1f1f1;
+    padding-top: 56%;
+    background-color: $gray-background-color;
     overflow: hidden;
     position: relative;
   }
@@ -177,11 +184,10 @@
   .date {
     font-size: 0.75rem;
     opacity: 0.5;
+    line-height: 1em;
   }
 
 }
-
-@include media-query($on-laptop) {}
 
 @include media-query($on-palm) {
   .post-list-item {
@@ -192,7 +198,7 @@
 
     .image-link {
       width: 100px;
-      padding-top: 70px;
+      padding-top: 60px;
     }
 
     .text {
@@ -200,8 +206,13 @@
       top: 50%;
       transform: translateY(-50%);
       margin: 0 0 0 115px;
+      padding: 0;
     }
 
+    .title {
+      line-height: 1.3em;
+      font-size: 1rem;
+    }
   }
 
 }
@@ -292,7 +303,6 @@
 
   .post-tag:before {
     content: "#";
-    // color: #AAA;
     opacity: 0.6;
   }
 }
@@ -324,7 +334,7 @@
  * Pagination
  */
 .pagination {
-  margin: 2.5rem 0;
+  margin: $spacing-unit 0;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
