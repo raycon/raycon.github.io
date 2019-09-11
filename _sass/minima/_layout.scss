@@ -86,6 +86,10 @@
   color: $gray-foreground-color;
   overflow: auto;
   border-top: 1px solid $gray-line-color;
+
+  @include media-query($on-palm) {
+    padding: $spacing-unit/2 0;
+  }
 }
 
 .accounts {
