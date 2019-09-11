@@ -959,6 +959,16 @@
 }
 
 /* Overrides */
+.markdown-body {
+  color: #333;
+  line-height: 1.8;
+}
+
+.markdown-body .highlight pre,
+.markdown-body code {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
 
 .markdown-body h1 { font-size: 24px; }
 .markdown-body h2 { font-size: 20px; }
@@ -966,4 +976,3 @@
 .markdown-body h4 { font-size: 16px; }
 .markdown-body h5 { font-size: 14px; }
 .markdown-body h6 { font-size: 12px; }
-.markdown-body { color: #333; }
