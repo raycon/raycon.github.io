@@ -54,7 +54,7 @@ google_analytics: UA-147218133-1
 
 # Pagination
 paginate_path: "/blog/page/:num/"
-paginate: 9
+paginate: 12
 
 # Sitemap
 url: "https://raegon.com"
