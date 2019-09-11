@@ -80,12 +80,12 @@
 
 .site-footer {
   margin-top: auto;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: $spacing-unit 0;
-  background-color: $gray-background-color;
-  color: $gray-foreground-color;
+  background-color: $background-gray;
+  border-top: 1px solid $line-gray;
+  color: $icon-color;
   overflow: auto;
-  border-top: 1px solid $gray-line-color;
 
   @include media-query($on-palm) {
     padding: $spacing-unit/2 0;
@@ -107,7 +107,7 @@
 .accounts svg {
   width: 16px;
   height: 16px;
-  fill: $gray-foreground-color;
+  fill: $icon-color;
 }
 
 .copyright {
@@ -150,7 +150,7 @@
   .image-link {
     display: block;
     padding-top: 56%;
-    background-color: $gray-background-color;
+    background-color: $background-gray;
     overflow: hidden;
     position: relative;
   }
@@ -328,7 +328,7 @@
 
 .utterances {
   max-width: 100%;
-  margin-bottom: $spacing-unit;
+  margin: $spacing-unit 0;
 }
 
 /*
@@ -361,7 +361,7 @@
   display: inline-block;
   padding: 0.3em 0.8em;
   color: $text-color;
-  background: #F1F1F1;
+  background: $background-gray;
 }
 
 .page-current {
