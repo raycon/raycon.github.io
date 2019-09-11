@@ -1,6 +1,6 @@
 {
     "pasteImage.defaultName": "YMMDD_HHmmss",
-    "pasteImage.path": "${projectRoot}/images/post",
+    "pasteImage.path": "${projectRoot}/images/content",
     "pasteImage.basePath": "${projectRoot}",
     "pasteImage.prefix": "/",
     "editor.insertSpaces": true,
