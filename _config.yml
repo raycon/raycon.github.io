@@ -59,3 +59,7 @@ paginate: 12
 
 # Sitemap
 url: "https://raegon.com"
+
+# Kramdown
+kramdown:
+  parse_block_html: true

@@ -31,13 +31,22 @@ layout: default
     </div>
   </header>
 
-  <div class="wrapper post-content markdown-body" itemprop="articleBody">
-    {{ content }}
+  <div class="wrapper">
+    <div class="content">
+      <div class="post-content  markdown-body" itemprop="articleBody">
+        {{ content }}
+      </div>
+      <div class="comment">
+          <script async crossorigin="anonymous" issue-term="pathname" repo="raycon/blog-comments" src="https://utteranc.es/client.js" theme="github-light"></script>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="toc">
+        <div class="toc-title">Contents</div>
+        {% include toc.html html=content h_min=2 %}
+      </div>
+    </div>
   </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
 </article>
-
-<div class="wrapper">
-  <script async crossorigin="anonymous" issue-term="pathname" repo="raycon/blog-comments" src="https://utteranc.es/client.js" theme="github-light"></script>
-</div>
