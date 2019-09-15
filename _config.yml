@@ -51,6 +51,7 @@ permalink: /:year/:month/:day/:title
 
 # Analytics
 google_analytics: UA-147218133-1
+google_adsense: ca-pub-6837398896123097
 
 # Pagination
 paginate_path: "/blog/page/:num/"
