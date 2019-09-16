@@ -8,6 +8,8 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$spacing-unit:     30px !default;
+
 // Colors
 $text-color:       #333 !default;
 $brand-color:      #0066cc !default;
@@ -20,16 +22,11 @@ $background-gray: #FAFBFC !default;
 $line-gray:       #E1E2EC !default;
 
 // Width of the content area
-// $content-width:    960px !default;
+$content-width:    960px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-
-// Overrides
-$spacing-unit:      30px !default;
-$content-width:     730px !default;
-$sidebar-width:     300px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
