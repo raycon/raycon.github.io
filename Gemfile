@@ -6,3 +6,4 @@ gemspec
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "jekyll-paginate", "~> 1.1.0"
 gem 'jekyll-sitemap', '~> 1.3', '>= 1.3.1'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

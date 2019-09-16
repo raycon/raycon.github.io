@@ -5,3 +5,4 @@ _site
 *.gem
 .jekyll-cache
 vendor
+.jekyll-metadata
