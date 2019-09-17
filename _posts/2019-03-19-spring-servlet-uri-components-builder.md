@@ -3,6 +3,7 @@ layout: post
 date: 2019-03-19 10:24:10 +0900
 categories: til
 tags: ["framework"]
+thumbnail: crane.jpg
 ---
 
 # ServletUriComponentsBuilder

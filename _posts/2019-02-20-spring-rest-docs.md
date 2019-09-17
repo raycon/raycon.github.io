@@ -3,6 +3,7 @@ layout: post
 date: 2019-02-20 16:25:13 +0900
 categories: til
 tags: ["framework"]
+thumbnail: document.jpg
 ---
 
 # Spring RestDocs

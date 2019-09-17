@@ -3,6 +3,7 @@ layout: post
 date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["editor"]
+thumbnail: run.jpg
 ---
 
 # 톰캣에서 스프링 어플리케이션 실행

@@ -3,7 +3,7 @@ layout: post
 date: 2019-03-28 11:29:45 +0900
 categories: til
 tags: ["language"]
-image: https://images.unsplash.com/photo-1456024569359-9e78b5d10a80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80
+thumbnail: path.jpg
 ---
 
 # Classpath

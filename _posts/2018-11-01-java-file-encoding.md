@@ -3,6 +3,7 @@ layout: post
 date: 2018-11-01 16:44:21 +0900
 categories: til
 tags: ["language"]
+thumbnail: files.jpg
 ---
 
 # Java File Encoding

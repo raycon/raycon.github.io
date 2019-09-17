@@ -3,7 +3,7 @@ layout: post
 date: 2019-05-27 16:13:45 +0900
 categories: til
 tags: ["database"]
-thumbnail: logo-dynamodb.jpg
+thumbnail: write.jpg
 ---
 
 # Batch Write with Behavior

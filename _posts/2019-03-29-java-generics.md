@@ -3,7 +3,7 @@ layout: post
 date: 2019-03-29 15:54:21 +0900
 categories: til
 tags: ["language"]
-thumbnail: logo-java.jpg
+thumbnail: coffee-begin.jpg
 ---
 
 # Generics

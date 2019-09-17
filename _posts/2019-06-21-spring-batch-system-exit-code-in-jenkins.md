@@ -6,7 +6,7 @@ tags: ["framework"]
 thumbnail: exit.jpg
 ---
 
-# Spring Batch System Exit Code
+# Spring Batch System Exit Code In Jenkins
 
 스프링 배치의 Job을 실행하는 도중 에러가 발생하면 다음과 같은 로그와 함께 종료된다.
 

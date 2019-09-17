@@ -3,6 +3,7 @@ layout: post
 date: 2019-03-22 17:35:23 +0900
 categories: til
 tags: ["framework"]
+thumbnail: tool.jpg
 ---
 
 # MyBatis-Spring-Boot-Autoconfigure

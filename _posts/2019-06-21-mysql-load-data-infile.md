@@ -6,7 +6,7 @@ tags: ["framework", "spring", "MySQL"]
 thumbnail: load-here.jpg
 ---
 
-# Spring Boot and MySQL Load Data
+# MySQL Load Data Infile
 
 `JdbcTemplate`을 사용해서 다음 명령 실행시
 

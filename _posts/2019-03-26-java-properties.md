@@ -3,7 +3,7 @@ layout: post
 date: 2019-03-26 17:02:34 +0900
 categories: til
 tags: ["language"]
-image: https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
+thumbnail: property.jpg
 ---
 
 # Properties
