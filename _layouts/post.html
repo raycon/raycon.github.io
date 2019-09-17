@@ -5,7 +5,13 @@ layout: default
 
   <header class="post-hero">
     <!-- image -->
-    <div class="hero-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
+    {% assign start = page.thumbnail | slice: 0 %}
+    {% if start == '/' %}
+      {% assign thumbnail = page.thumbnail %}
+    {% else %}
+      {% assign thumbnail = '/thumbnails/' | append: page.thumbnail %}
+    {% endif %}
+    <div class="hero-image" {%- if thumbnail -%} style="background-image: url('{{thumbnail}}')" {%- endif -%}></div>
     <div class="hero-gradient"></div>
     <div class="wrapper">
       <!-- meta -->
@@ -51,7 +57,7 @@ layout: default
       <script async crossorigin="anonymous" issue-term="pathname" repo="raycon/blog-comments" src="https://utteranc.es/client.js" theme="github-light"></script>
     </div>
   </div>
-  
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
 </article>

@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["tool"]
-image: https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80
+thumbnail: git.jpg
 ---
 
 # Git add and commit in one command

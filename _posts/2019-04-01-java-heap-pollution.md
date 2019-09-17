@@ -3,7 +3,7 @@ layout: post
 date: 2019-04-01 16:48:17 +0900
 categories: til
 tags: ["language"]
-image: https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80
+thumbnail: boxes.jpg
 ---
 
 # Heap Pollution

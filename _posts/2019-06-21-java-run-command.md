@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["language"]
-image: https://images.unsplash.com/photo-1549896869-ca27eeffe4fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+thumbnail: track.jpg
 ---
 
 # Java Run Command
