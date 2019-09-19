@@ -416,60 +416,58 @@
  * Search
  */
 
-.search {
-  border-top: 1px solid $line-gray;
-  padding-top: $spacing-unit;
-}
-
- #search-input {
-   width: 100%;
-   border:none;
-   @include sans;
-   font-size: 1rem;
-   padding: 1em 1em;
-   color: $text-gray;
-   background: $background-gray;
-   border: 1px solid $line-gray;
-
-   &::placeholder {
-     color: $text-gray-light;
-   }
+ // Container
+ .gsc-control-cse {
+   padding: 0 !important;
+   margin-bottom: $spacing-unit;
  }
 
-#search-results {
-  font-size: 1rem;
-  margin-bottom: $spacing-unit;
-  list-style: none;
-  border:1px solid $line-gray;
-  border-top: none;
-  margin-top: -1px;
+// Input
+input.gsc-input {
+  font-family: $base-font-family !important;
+  font-size: 18px !important;
+  font-weight: bold;
+  padding: 0.5em !important;
+  height: 40px !important;
+  color: $text-color !important;
 }
 
-.search-empty {
-  text-align: center;
-  color: $text-gray;
-  padding: 0.6em 1em;
+// Button
+.gsc-search-button-v2 {
+  height: 50px !important;
 }
 
-.search-item {
-  padding: 0.6em 1em;
-  overflow: auto;
+// Title
+.gs-title {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;  
+  text-decoration: none !important;
+
+  b {
+    font-size: 18px !important;
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    text-decoration: underline !important;
+  }
 }
 
-.search-date {
-  display: block;
-  float: right;
-  font-size: 0.875rem;
-  color: $text-gray-light;
+// URL
+.gs-webResult div.gs-visibleUrl {
+  font-family: $base-font-family !important;
+  font-size: 14px !important;
 }
 
-.search-link,
-.search-link:hover,
-.search-link:visited {
-  color: $text-color;
-  text-decoration: none;
+// Content
+.gsc-control-cse .gsc-table-result {
+  font-family: $base-font-family !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
 }
 
-.search-link:hover li {
-  background: $background-gray;
+.gsc-cursor-page {
+  font-family: $base-font-family !important;
+  font-size: 18px !important;
 }
