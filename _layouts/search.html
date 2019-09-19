@@ -4,31 +4,17 @@ layout: default
 <section class="search">
 
   <div class="wrapper">
-
-    <input id="search-input" placeholder="search posts.." type="text">
-
-    <ul id="search-results"></ul>
-
-    <script
-      src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-    <script>
-      window.simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('search-results'),
-        json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<a class="search-link" href="{url}?query={query}" title="{desc}"><li class="search-item"><span class="search-title">{title}</span><span class="search-date">{date}</span></li></a>',
-        noResultsText: '<li class="search-empty">No results found</li>',
-        limit: 100,
-        fuzzy: false,
-        exclude: ['Welcome']
-      })
-      window.onload = function () {
-        var input = document.getElementById("search-input");
-        input.value='';
-        input.focus();
-      }
-    </script>
-
+    <div class="gcse-searchbox-only"></div>
+    <div class="gcse-searchresults-only"></div>
   </div>
 
 </section>
+
+<script async src='https://cse.google.com/cse.js?cx=partner-pub-6837398896123097:6074108123'></script>
+<script>
+window.onload = function () {
+  var input = document.getElementById("gsc-i-id1");
+  input.value='';
+  input.focus();
+}
+</script>
