@@ -264,12 +264,12 @@
  * Post
  */
 .post-hero {
-
   position: relative;
   color: #F5F5F5;
   background-color: #444;
   z-index: 0;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: $spacing-unit;
 
   .wrapper {
     padding-top: $spacing-unit * 2;
@@ -476,5 +476,6 @@ input.gsc-input {
 */
 
 .post-ad {
-  margin: $spacing-unit/2 0;
+  background-color: $background-gray;
+  margin-bottom: $spacing-unit - 4px;
 }
