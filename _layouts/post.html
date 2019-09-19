@@ -5,13 +5,7 @@ layout: default
 
   <header class="post-hero">
     <!-- image -->
-    {% assign start = page.thumbnail | slice: 0 %}
-    {% if start == '/' %}
-      {% assign thumbnail = page.thumbnail %}
-    {% else %}
-      {% assign thumbnail = '/thumbnails/' | append: page.thumbnail %}
-    {% endif %}
-    <div class="hero-image" {%- if thumbnail -%} style="background-image: url('{{thumbnail}}')" {%- endif -%}></div>
+    <div class="hero-image" {%- if page.thumbnail -%} style="background-image: url('{{page.thumbnail}}')" {%- endif -%}></div>
     <div class="hero-gradient"></div>
     <div class="wrapper">
       <!-- meta -->

@@ -10,13 +10,7 @@ layout: default
       {%- for post in posts -%}
         <li class="post-list-item">
           <a class="image-link" href="{{ post.url | relative_url }}">
-            {% assign start = post.thumbnail | slice: 0 %}
-            {% if start == '/' %}
-              {% assign thumbnail = post.thumbnail %}
-            {% else %}
-              {% assign thumbnail = '/thumbnails/' | append: post.thumbnail %}
-            {% endif %}
-            <div class="image" style="background-image: url('{{thumbnail | relative_url}}')"></div>
+            <div class="image" style="background-image: url('{{post.thumbnail | relative_url}}')"></div>
           </a>
           <div class="text">
             <h3 class="title">

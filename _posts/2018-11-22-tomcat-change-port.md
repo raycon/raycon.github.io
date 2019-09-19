@@ -3,7 +3,7 @@ layout: post
 date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["tool"]
-thumbnail: port.jpg
+thumbnail: /thumbnails/port.jpg
 ---
 
 # Tomcat 포트 변경

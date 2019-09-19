@@ -3,7 +3,7 @@ layout: post
 date: 2019-04-01 16:48:17 +0900
 categories: til
 tags: ["language"]
-thumbnail: boxes.jpg
+thumbnail: /thumbnails/boxes.jpg
 ---
 
 # Heap Pollution
