@@ -473,7 +473,7 @@ input.gsc-input {
 
   // Title
   .gs-title {
-    font-size: 18px !important;  
+    font-size: 18px !important;
 
     b {
       font-size: 18px !important;
@@ -501,12 +501,12 @@ input.gsc-input {
 * Adsense
 */
 
-.post-ad {
+.ad-footer {
   background-color: $background-gray;
   margin: $spacing-unit 0;
 }
 
-.search-ad {
+.ad-post {
   background-color: $background-gray;
   margin: $spacing-unit 0;
 }
