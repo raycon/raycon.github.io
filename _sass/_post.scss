@@ -1,0 +1,48 @@
+
+/**
+ * Post
+ */
+
+ .post-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+
+  @include media-query($on-laptop) {
+    max-height: 150px;
+  }
+}
+
+.post-header {
+  margin: $spacing-unit 0;
+}
+
+.post-title {
+  margin: 0;
+  @include sans;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+  @include media-query($on-laptop) {
+    font-size: 1.7rem;
+  }
+}
+
+.post-date {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5em;
+  opacity: 0.5;
+}
+
+// Hide markdown first heading
+.post-content > h1 {
+  display: none;
+}
+
+.utterances {
+  max-width: 100%;
+  margin: $spacing-unit 0;
+}

@@ -3,35 +3,15 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-hero">
-    <!-- image -->
-    <div class="hero-image" {%- if page.image -%} style="background-image: url('{{page.image}}')" {%- endif -%}></div>
-    <div class="hero-gradient"></div>
-    <div class="wrapper">
-      <!-- meta -->
-      <div class="post-meta">
-        <!-- category -->
-        <ul class="post-cats">
-          {%- for cat in page.categories -%}
-            <li class="post-cat">{{cat}}</li>
-          {%- endfor -%}
-        </ul>
-        <!-- tag -->
-        <ul class="post-tags">
-          {%- for tag in page.tags -%}
-            <li class="post-tag">{{tag}}</li>
-          {%- endfor -%}
-        </ul>
-      </div>
-      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-    </div>
-  </header>
-
   <div class="wrapper">
+    {%- if page.image -%}<img class="post-image" src="{{page.image | relative_url}}"/>{%- endif -%}
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+    </header>
     <!-- Content -->
     <div class="post-content markdown-body" itemprop="articleBody">
       {{ content }}
