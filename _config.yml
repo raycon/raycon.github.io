@@ -53,7 +53,7 @@ google_adsense: ca-pub-6837398896123097
 
 # Pagination
 paginate_path: "/blog/page/:num/"
-paginate: 12
+paginate: 30
 
 # Sitemap
 url: "https://raegon.com"
@@ -66,6 +66,3 @@ kramdown:
 image:
   width: 300
   quality: 90
-
-# Excerpt
-excerpt_separator: ----
