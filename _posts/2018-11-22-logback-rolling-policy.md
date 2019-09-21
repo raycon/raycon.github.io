@@ -3,7 +3,7 @@ layout: post
 date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["framework"]
-thumbnail: /thumbnails/rolling-wave.jpg
+image: /thumbnails/rolling-wave.jpg
 ---
 
 # Logback Rolling Policy

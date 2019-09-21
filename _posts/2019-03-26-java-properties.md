@@ -3,7 +3,7 @@ layout: post
 date: 2019-03-26 17:02:34 +0900
 categories: til
 tags: ["language"]
-thumbnail: /thumbnails/property.jpg
+image: /thumbnails/property.jpg
 ---
 
 # Properties

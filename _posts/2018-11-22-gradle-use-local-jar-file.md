@@ -3,7 +3,7 @@ layout: post
 date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["tool"]
-thumbnail: /thumbnails/jar.jpg
+image: /thumbnails/jar.jpg
 ---
 
 # 로컬에 있는 JAR 파일 사용하기

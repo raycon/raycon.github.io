@@ -3,7 +3,7 @@ layout: post
 date: 2019-03-28 11:29:45 +0900
 categories: til
 tags: ["language"]
-thumbnail: /thumbnails/path.jpg
+image: /thumbnails/path.jpg
 ---
 
 # Classpath

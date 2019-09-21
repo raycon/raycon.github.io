@@ -3,7 +3,7 @@ layout: post
 date: 2019-02-18 20:48:09 +0900
 categories: til
 tags: ["framework"]
-thumbnail: /thumbnails/swagger.jpg
+image: /thumbnails/swagger.jpg
 ---
 
 # Spring Swagger2

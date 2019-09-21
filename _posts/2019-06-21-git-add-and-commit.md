@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["tool"]
-thumbnail: /thumbnails/git.jpg
+image: /thumbnails/git.jpg
 ---
 
 # Git add and commit in one command

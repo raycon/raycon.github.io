@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["framework", "spring", "MySQL"]
-thumbnail: /thumbnails/load-here.jpg
+image: /thumbnails/load-here.jpg
 ---
 
 # MySQL Load Data Infile

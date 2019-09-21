@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["language"]
-thumbnail: /thumbnails/track.jpg
+image: /thumbnails/track.jpg
 ---
 
 # Java Run Command

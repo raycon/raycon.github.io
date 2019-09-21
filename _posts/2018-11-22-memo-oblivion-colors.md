@@ -3,7 +3,7 @@ layout: post
 date: 2018-11-22 10:34:10 +0900
 categories: til
 tags: ["memo"]
-thumbnail: /thumbnails/tiles.jpg
+image: /thumbnails/tiles.jpg
 ---
 
 # Oblivion Colors

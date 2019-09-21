@@ -3,7 +3,7 @@ layout: post
 date: 2019-06-21 09:20:22 +0900
 categories: til
 tags: ["framework"]
-thumbnail: /thumbnails/exit.jpg
+image: /thumbnails/exit.jpg
 ---
 
 # Spring Batch System Exit Code In Jenkins

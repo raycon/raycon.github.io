@@ -65,6 +65,6 @@ kramdown:
   parse_block_html: true
 
 # Images
-thumbnail:
+image:
   width: 300
   quality: 90
