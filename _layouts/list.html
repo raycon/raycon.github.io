@@ -5,7 +5,7 @@ layout: default
 <div class="wrapper">
   {%- if paginator.posts.size > 0 -%}
     <!-- Posts -->
-    <ul class="post-list">
+    <ul class="list">
       {%- assign posts = paginator.posts -%}
       {%- for post in posts -%}
         {%- assign image = post.image -%}
@@ -14,21 +14,21 @@ layout: default
           {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
         {%- endif -%}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <li class="post-item">
-          <a class="post-link" href="{{ post.url | relative_url }}">
+        <li class="list-item">
+          <a class="item-link" href="{{ post.url | relative_url }}">
             {%- if post.image -%}
-            <img class="post-image" src="{{ image }}"/>
+            <img class="item-image" src="{{ image }}"/>
             {%- endif -%}
-            <div class="post-text">
-              <h3 class="post-title">
+            <div class="item-text">
+              <h3 class="item-title">
                 {{ post.title | escape }}
               </h3>
               {%- if post.subtitle -%}
-                <div class="post-subtitle">
+                <div class="item-subtitle">
                   {{ post.subtitle }}
                 </div>
               {%- endif -%}
-              <div class="post-date">{{ post.date | date: date_format }}</div>
+              <div class="item-date">{{ post.date | date: date_format }}</div>
             </div>
           </a>
         </li>
