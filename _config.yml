@@ -63,3 +63,8 @@ url: "https://raegon.com"
 # Kramdown
 kramdown:
   parse_block_html: true
+
+# Images
+thumbnail:
+  width: 300
+  quality: 90

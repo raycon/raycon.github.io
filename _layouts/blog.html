@@ -10,7 +10,12 @@ layout: default
       {%- for post in posts -%}
         <li class="post-list-item">
           <a class="image-link" href="{{ post.url | relative_url }}">
-            <div class="image" style="background-image: url('{{post.thumbnail | relative_url}}')"></div>
+            {%- assign image = post.thumbnail -%}
+            {%- if jekyll.environment == 'production' -%}
+              {%- assign image = image | absolute_url -%}
+              {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
+            {%- endif -%}
+            <div class="image" style="background-image: url('{{ image }}')"></div>
           </a>
           <div class="text">
             <h3 class="title">
