@@ -8,22 +8,29 @@ layout: default
     <ul class="post-list">
       {%- assign posts = paginator.posts -%}
       {%- for post in posts -%}
-        <li class="post-list-item">
-          <a class="image-link" href="{{ post.url | relative_url }}">
-            {%- assign image = post.image -%}
-            {%- if jekyll.environment == 'production' -%}
-              {%- assign image = image | absolute_url -%}
-              {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
+        {%- assign image = post.image -%}
+        {%- if jekyll.environment == 'production' -%}
+          {%- assign image = image | absolute_url -%}
+          {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
+        {%- endif -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <li class="post-item">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {%- if post.image -%}
+            <img class="post-image" src="{{ image }}"/>
             {%- endif -%}
-            <div class="image" style="background-image: url('{{ image }}')"></div>
+            <div class="post-text">
+              <h3 class="post-title">
+                {{ post.title | escape }}
+              </h3>
+              {%- if post.subtitle -%}
+                <div class="post-subtitle">
+                  {{ post.subtitle }}
+                </div>
+              {%- endif -%}
+              <div class="post-date">{{ post.date | date: date_format }}</div>
+            </div>
           </a>
-          <div class="text">
-            <h3 class="title">
-              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h3>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="date">{{ post.date | date: date_format }}</span>
-          </div>
         </li>
       {%- endfor -%}
     </ul>
