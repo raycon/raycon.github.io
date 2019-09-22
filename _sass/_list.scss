@@ -67,14 +67,14 @@
   }
 
   h2 {
-    margin: 5px 0 0 0;
+    margin: 0.5em 0 0 0;
     font-size: 0.875rem;
     color: $grey-color;
   }
 
   time {
     display: block;
-    margin-top: 5px;
+    margin-top: 0.5em;
     font-size: 0.75rem;
     color: $grey-color;
   }
@@ -85,11 +85,7 @@
     width: 49%;
 
     section {
-      margin: 14px;
-    }
-
-    h2, time {
-      margin-top: 7px;
+      margin: $spacing-unit / 2;
     }
   }
 }

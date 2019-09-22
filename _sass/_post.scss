@@ -2,48 +2,48 @@
  * Post
  */
 
-.post {
-  figure {
-    width: 100%;
-    padding-top: 30%;
-    margin: 0;
-    position: relative;
-
-    img {
-      border-radius: 3px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-}
-
 .post header {
-  margin: $spacing-unit 0;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: $spacing-unit;
 
   h1 {
+    @include sans(600);
+    font-size: 1.5rem;
     margin: 0;
-    @include sans;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: -1px;
+  }
 
-    @include media-query($on-laptop) {
-      font-size: 1.7rem;
-    }
+  h2 {
+    margin: 0.5em 0 0 0;
+    font-size: 1rem;
+    color: $grey-color;
   }
 
   time {
     display: block;
-    font-size: 0.875rem;
     margin-top: 0.5em;
-    opacity: 0.5;
+    font-size: 0.875rem;
+    color: $grey-color;
   }
+
 }
 
+.post figure {
+  width: 100%;
+  padding-top: 30%;
+  position: relative;
+  margin-top: $spacing-unit;
+
+  img {
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 
 // Hide markdown first heading
 .post-content>h1 {
