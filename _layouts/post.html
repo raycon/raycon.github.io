@@ -4,34 +4,34 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <div class="wrapper">
-    {%- if page.image -%}<img class="post-image" src="{{page.image | relative_url}}"/>{%- endif -%}
+    {%- if page.image -%}
+      <figure>
+        <img src="{{page.image | relative_url}}"/>
+      </figure>
+    {%- endif -%}
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
-          {{ page.date | date: date_format }}
-        </time>
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
     </header>
     <!-- Content -->
-    <div class="post-content markdown-body" itemprop="articleBody">
+    <section class="post-content markdown-body" itemprop="articleBody">
       {{ content }}
-    </div>
+    </section>
     <div class="ad-post">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle"
-          style="display:block; text-align:center;"
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-          data-ad-client="ca-pub-6837398896123097"
-          data-ad-slot="5943473542"></ins>
+      <ins class="adsbygoogle" data-ad-client="ca-pub-6837398896123097" data-ad-format="fluid" data-ad-layout="in-article" data-ad-slot="5943473542" style="display:block; text-align:center;"></ins>
       <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
       </script>
     </div>
     <!-- Comment -->
-    <div class="comment">
+    <section class="comment">
       <script async crossorigin="anonymous" issue-term="pathname" repo="raycon/blog-comments" src="https://utteranc.es/client.js" theme="github-light"></script>
-    </div>
+    </section>
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
