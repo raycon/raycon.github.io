@@ -10,9 +10,9 @@
   margin-top: auto;
   font-size: 0.75rem;
   padding: $spacing-unit 0;
-  background-color: $background-gray;
-  border-top: 1px solid $line-gray;
-  color: $icon-color;
+  background-color: $grey-background-color;
+  border-top: 1px solid $grey-line-color;
+  color: $grey-color;
   overflow: auto;
 
   @include media-query($on-palm) {
@@ -35,7 +35,7 @@
 .accounts svg {
   width: 16px;
   height: 16px;
-  fill: $icon-color;
+  fill: $grey-color;
 }
 
 .copyright {
@@ -47,7 +47,7 @@
  */
 
  .toc {
-   border: 1px solid $line-gray;
+   border: 1px solid $grey-line-color;
    line-height: 1.8;
    box-shadow: 0 2px 8px rgba(59,64,69,0.1);
 
@@ -66,8 +66,8 @@
    font-size: 0.875rem;
    font-weight: 600;
    padding: 0.5rem 1rem;
-   background: $background-gray;
-   border-bottom: 1px solid $line-gray;
+   background: $grey-background-color;
+   border-bottom: 1px solid $grey-line-color;
  }
 
  .toc ul {
@@ -111,7 +111,7 @@
   display: inline-block;
   padding: 0.3em 0.8em;
   color: $text-color;
-  background: $background-gray;
+  background: $grey-background-color;
 }
 
 .page-current {
