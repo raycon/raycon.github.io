@@ -1,25 +1,26 @@
 <header class="site-header" role="banner">
 
-    <div class="wrapper">
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths | reverse -%}
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  <div class="wrapper">
 
-        <nav class="site-nav">
-            <ul>
-                {%- for item in site.data.navigation -%}
-                    {% assign current = page.url | downcase | split: '/' %}
-                    {% assign class = nil %}
-                    {% if page.url == item.url %}
-                        {% assign class = ' active' %}
-                    {% endif %}
-                    <li class="transition">
-                        <a href="{{ item.url }}" class="page-link{{ class }}">{{ item.title }}</a>
-                    </li>
-                {%- endfor -%}
-            </ul>
-        </nav>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths | reverse -%}
+    <h1 class="site-title">
+      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </h1>
 
-    </div>
+    <nav class="site-nav">
+      <ul>
+        {%- for item in site.data.navigation -%}
+        {% assign current = page.url | downcase | split: '/' %}
+        {% assign class = nil %}
+        {% if page.url == item.url %}
+        {% assign class = ' active' %}
+        {% endif %}
+        <li><a href="{{ item.url }}" class="page-link{{ class }}">{{ item.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+  </div>
 
 </header>

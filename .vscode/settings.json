@@ -4,5 +4,6 @@
     "pasteImage.basePath": "${projectRoot}",
     "pasteImage.prefix": "/",
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
 }

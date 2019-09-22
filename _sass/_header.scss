@@ -1,0 +1,48 @@
+.site-header {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+}
+
+.site-title {
+  @include sans(600);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -1px;
+  float: left;
+  margin: 0;
+
+  a:after {
+    content: ".";
+    color: $brand-color;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+.site-nav {
+  @include sans;
+  line-height: 2.5rem;
+  float: right;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
+
+  .active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $text-color;
+    font-weight: 600;
+  }
+}
