@@ -3,61 +3,65 @@ layout: default
 ---
 
 <div class="wrapper">
-  {%- if paginator.posts.size > 0 -%}
-    <!-- Posts -->
-    <ul class="list">
-      {%- assign posts = paginator.posts -%}
-      {%- for post in posts -%}
-        {%- assign image = post.image -%}
-        {%- if jekyll.environment == 'production' -%}
-          {%- assign image = image | absolute_url -%}
-          {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
+
+  <section class="list">
+
+    {%- if paginator.posts.size > 0 -%}
+
+    {%- for post in paginator.posts -%}
+
+    {%- assign image = post.image -%}
+    {%- if jekyll.environment == 'production' -%}
+    {%- assign image = image | absolute_url -%}
+    {%- assign image = "https://images.weserv.nl/?url=" | append: image  | append: "&w=" | append: site.thumbnail.width | append: "&q=" | append: site.thumbnail.quality -%}
+    {%- endif -%}
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+    <article>
+      <a class="item-link" href="{{ post.url | relative_url }}">
+        {%- if post.image -%}
+        <figure><img class="item-image" src="{{ image }}" /></figure>
         {%- endif -%}
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <li class="list-item">
-          <a class="item-link" href="{{ post.url | relative_url }}">
-            {%- if post.image -%}
-            <img class="item-image" src="{{ image }}"/>
-            {%- endif -%}
-            <div class="item-text">
-              <h3 class="item-title">
-                {{ post.title | escape }}
-              </h3>
-              {%- if post.subtitle -%}
-                <div class="item-subtitle">
-                  {{ post.subtitle }}
-                </div>
-              {%- endif -%}
-              <div class="item-date">{{ post.date | date: date_format }}</div>
-            </div>
-          </a>
-        </li>
-      {%- endfor -%}
-    </ul>
+        <section>
+          <h1 class="item-title">{{ post.title | escape }}</h1>
+          {%- if post.subtitle -%}
+          <h2 class="item-subtitle">{{ post.subtitle }}</h2>
+          {%- endif -%}
+          <time class="item-date">{{ post.date | date: date_format }}</time>
+        </section>
+      </a>
+    </article>
+
+    {%- endfor -%}
 
     <!-- Page -->
     {% if paginator.total_pages > 1 %}
-      <div class="pagination">
-        {% if paginator.previous_page %}
-          <a class="page-btn page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-        {% endif %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a class="page-btn page-prev"
+        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      {% endif %}
 
-        {% for page in (1..paginator.total_pages) %}
-          {% if page == paginator.page %}
-            <em class="page-btn page-current">{{ page }}</em>
-          {% elsif page == 1 %}
-            <a class="page-btn" href="/">{{ page }}</a>
-          {% else %}
-            <a class="page-btn" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-          {% endif %}
-        {% endfor %}
+      {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <em class="page-btn page-current">{{ page }}</em>
+      {% elsif page == 1 %}
+      <a class="page-btn" href="/">{{ page }}</a>
+      {% else %}
+      <a class="page-btn"
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+      {% endfor %}
 
-        {% if paginator.next_page %}
-          <a class="page-btn page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-        {% endif %}
-      </div>
+      {% if paginator.next_page %}
+      <a class="page-btn page-next"
+        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+      {% endif %}
+    </div>
     {% endif %}
 
-  {%- endif -%}
+    {%- endif -%}
+
+  </section>
 
 </div>
