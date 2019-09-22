@@ -13,10 +13,6 @@
   width: 32%;
   margin-bottom: 2%;
 
-  @include media-query($on-palm) {
-    width: 49%;
-  }
-
   a {
     display: block;
     border-radius: 3px;
@@ -47,6 +43,7 @@
   figure {
     width: 100%;
     padding-top: 57%;
+    margin: 0;
     position: relative;
 
     img {
@@ -60,7 +57,7 @@
   }
 
   section {
-    margin: 15px 20px;
+    margin: 20px;
   }
 
   h1 {
@@ -70,13 +67,29 @@
   }
 
   h2 {
-    margin-top: 15px;
+    margin: 5px 0 0 0;
     font-size: 0.875rem;
+    color: $grey-color;
   }
 
   time {
-    margin-top: 15px;
+    display: block;
+    margin-top: 5px;
     font-size: 0.75rem;
     color: $grey-color;
+  }
+}
+
+@include media-query($on-palm) {
+  .list article {
+    width: 49%;
+
+    section {
+      margin: 14px;
+    }
+
+    h2, time {
+      margin-top: 7px;
+    }
   }
 }
