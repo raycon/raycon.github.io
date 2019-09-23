@@ -4,21 +4,17 @@
 
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths | reverse -%}
-    <h1 class="site-title">
-      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    </h1>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     <nav class="site-nav">
-      <ul>
-        {%- for item in site.data.navigation -%}
+      {%- for item in site.data.navigation -%}
         {% assign current = page.url | downcase | split: '/' %}
         {% assign class = nil %}
         {% if page.url == item.url %}
-        {% assign class = ' active' %}
+          {% assign class = 'active' %}
         {% endif %}
-        <li><a href="{{ item.url }}" class="page-link{{ class }}">{{ item.title }}</a></li>
-        {%- endfor -%}
-      </ul>
+        <a href="{{ item.url }}" class="{{ class }}">{{ item.title }}</a>
+      {%- endfor -%}
     </nav>
 
   </div>

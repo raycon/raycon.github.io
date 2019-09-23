@@ -1,47 +1,36 @@
 .site-header {
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
   border-bottom: 1px solid $grey-line-color;
-}
 
-.site-title {
-  @include sans(600);
-  font-size: 2rem;
-  line-height: 2.5rem;
-  letter-spacing: -1px;
-  float: left;
-  margin: 0;
-
-  a:after {
-    content: ".";
-    color: $brand-color;
+  .wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
   }
 
   a:hover {
     opacity: 0.5;
+  }
+}
+
+.site-title {
+  @include sans(600);
+  font-size: 32px;
+  letter-spacing: -1px;
+
+  &:after {
+    content: ".";
+    color: $brand-color;
   }
 }
 
 .site-nav {
   @include sans;
-  line-height: 2.5rem;
-  float: right;
+  margin-left: auto;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-  }
-
-  li {
-    display: inline-block;
+  a {
     margin-left: 1em;
   }
-
-  a:hover {
-    opacity: 0.5;
-  }
-
-  .active {
+  a.active {
     padding-bottom: 5px;
     border-bottom: 2px solid $text-color;
     font-weight: 600;
