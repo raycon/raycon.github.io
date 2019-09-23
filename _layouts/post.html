@@ -6,6 +6,11 @@ layout: default
   <div class="wrapper">
 
     <header>
+      {%- if page.image -%}
+      <figure>
+        <img src="{{page.image | relative_url}}" />
+      </figure>
+      {%- endif -%}
       <h1 itemprop="name headline">{{ page.title | escape }}</h1>
       {%- if page.subtitle -%}
       <h2>{{ page.subtitle }}</h2>
@@ -14,11 +19,6 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.image -%}
-      <figure>
-        <img src="{{page.image | relative_url}}" />
-      </figure>
-      {%- endif -%}
     </header>
 
     <!-- Content -->
