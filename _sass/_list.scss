@@ -80,12 +80,14 @@
   }
 }
 
+@include media-query($on-laptop) {
+  .list article section {
+    margin: 12px;
+  }
+}
+
 @include media-query($on-palm) {
   .list article {
     width: 49%;
-
-    section {
-      margin: $spacing-unit / 2;
-    }
   }
 }
