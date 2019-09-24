@@ -129,6 +129,8 @@ fieldWithPath(path).attributes(key("constraints")
 
 ## Snippet 커스터마이징
 
+{% raw %}
+
 - `test/resources/org/springframework/restdocs/template` 경로에 커스터마이징 하고 싶은 snippet 파일을 추가한다.
 - `request-fields.snippet` 파일을 다음과 같이 정의해서 사용한다. [참고](https://docs.spring.io/spring-restdocs/docs/current/reference/html5/#documenting-your-api-customizing)
 
@@ -161,6 +163,8 @@ fieldWithPath(path).attributes(key("constraints")
   - No method or field with name 'custom'
 - `#`으로 존재 여부를 검사하고 `{{.}}`으로 값을 출력한다. [참고](https://stackoverflow.com/questions/25320065/what-is-in-mustache)
 - 속성을 추가할 때 헤더도 같이 추가해야 테이블이 깨지지 않는다.
+
+{% endraw  %}
 
 ### 메시지 커스터마이징
 
