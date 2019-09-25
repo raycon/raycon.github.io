@@ -13,7 +13,8 @@
 }
 
 .site-title {
-  @include sans(600);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   font-size: 32px;
   letter-spacing: -1px;
 
@@ -24,7 +25,7 @@
 }
 
 .site-nav {
-  @include sans;
+  font-family: "Open Sans", sans-serif;
   margin-left: auto;
 
   a {
