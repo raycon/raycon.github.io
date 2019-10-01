@@ -1,11 +1,14 @@
 {
-    "pasteImage.defaultName": "YMMDD_HHmmss",
-    "pasteImage.path": "${projectRoot}/thumbnails",
-    "pasteImage.basePath": "${projectRoot}",
-    "pasteImage.prefix": "/",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "workbench.editor.showTabs": false,
-    "files.autoSave": "onFocusChange"
+  "pasteImage.defaultName": "YMMDD_HHmmss",
+  "pasteImage.path": "${projectRoot}/thumbnails",
+  "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.prefix": "/",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "workbench.editor.showTabs": false,
+  "files.autoSave": "onFocusChange",
+  "markdown.styles": [
+    ".vscode/dark-material.css"
+  ]
 }
