@@ -2,9 +2,7 @@ title: raegon
 author: Raegon Kim
 email: raegon@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  나의 언어
 
 # social links
 github_username:  raycon
@@ -45,18 +43,18 @@ plugins:
  - jekyll-sitemap
 
 # Link
-permalink: /:year/:month/:day/:title
+permalink: /:title
 
 # Analytics
 google_analytics: UA-147218133-1
 google_adsense: ca-pub-6837398896123097
 
 # Pagination
-paginate_path: "/blog/page/:num/"
+paginate_path: "/page/:num/"
 paginate: 30
 
 # Sitemap
-url: "https://raegon.com"
+url: "https://www.raegon.com"
 
 # Kramdown
 kramdown:
