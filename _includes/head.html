@@ -9,8 +9,6 @@
   <title>{% if page.title %}{% if page.type == "category" %}Category: {% endif %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   {% seo title=false %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}?{{site.time | date: '%s%N'}}">
-  <link rel="stylesheet" href="{{ "/assets/css/github-markdown.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/github-pygments.css" | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
